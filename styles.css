@@ -19,11 +19,11 @@ a{text-decoration:none;color:inherit}
 /* ─── Glassmorphism Nav ─── */
 .nav{position:fixed;top:0;left:0;right:0;height:var(--nav-height);background:var(--bg-nav);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--border);z-index:1000;transition:all var(--transition)}
 .nav.scrolled{box-shadow:0 4px 30px rgba(0,0,0,0.15)}
-.nav-inner{max-width:var(--max-width);margin:0 auto;height:100%;display:flex;align-items:center;justify-content:space-between;padding:0 24px}
-.nav-brand{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:14px;letter-spacing:2px;text-transform:uppercase;color:var(--text-primary)}
+.nav-inner{max-width:1400px;margin:0 auto;height:100%;display:flex;align-items:center;justify-content:space-between;padding:0 20px}
+.nav-brand{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--text-primary);flex-shrink:0}
 .nav-brand span{color:var(--accent)}
-.nav-links{display:flex;gap:2px;list-style:none;align-items:center}
-.nav-links a{font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--text-muted);padding:8px 10px;border-radius:var(--radius-sm);transition:all var(--transition);position:relative;white-space:nowrap}
+.nav-links{display:flex;gap:1px;list-style:none;align-items:center}
+.nav-links a{font-size:10.5px;font-weight:600;letter-spacing:0.8px;text-transform:uppercase;color:var(--text-muted);padding:8px 8px;border-radius:var(--radius-sm);transition:all var(--transition);position:relative;white-space:nowrap}
 .nav-links a:hover,.nav-links a.active{color:var(--accent);background:var(--accent-glow)}
 .nav-links a.active::after{content:'';position:absolute;bottom:2px;left:50%;transform:translateX(-50%);width:16px;height:2px;background:var(--accent);border-radius:2px}
 
@@ -190,6 +190,12 @@ a{text-decoration:none;color:inherit}
 /* ─── Intro ─── */
 .intro-content{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:40px}
 .intro-content p{color:var(--text-secondary);font-size:15px;line-height:1.8;margin-bottom:16px}
+.intro-content .hi{color:var(--accent);font-weight:600}
+.intro-content .hi-gold{color:var(--skill-personal);font-weight:600}
+.intro-content .hi-green{color:var(--check-color);font-weight:600}
+.intro-content .hi-badge{display:inline-block;font-size:12px;font-weight:600;padding:2px 10px;border-radius:12px;background:var(--accent-glow);color:var(--accent);border:1px solid var(--border);margin:0 2px;transition:all var(--transition)}
+.intro-content .hi-badge:hover{background:var(--accent);color:#fff;transform:translateY(-1px)}
+.intro-content .hi-stat{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;color:var(--text-primary);font-size:16px}
 
 /* ─── Stagger animation for skills ─── */
 .skill-stagger{opacity:0;transform:translateY(10px);transition:opacity .4s ease,transform .4s ease}
